@@ -1,0 +1,33 @@
+DESCRIPTION
+-----------
+
+djabberdjaw is a Jabber bot that uses Django for its management backend.
+
+DEPENDENCIES
+------------
+
+Django >= 1.0
+dnspython
+jabberbot >= 0.4
+xmpppy
+
+For the included bot commands:
+
+pymarc
+PyZ3950
+worldcat
+
+TODO
+----
+
+- Add threading for multiple bot support 
+
+LICENSE
+-------
+
+GPL 
+
+AUTHORS
+-------
+
+Mark A. Matienzo <mark@matienzo.org>

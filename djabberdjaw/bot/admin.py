@@ -1,10 +1,26 @@
+# Copyright (C) 2008 Mark A. Matienzo
+# 
+# This file is part of djabberdjaw.
+# 
+# djabberdjaw is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# djabberdjaw is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with djabberdjaw.  If not, see <http://www.gnu.org/licenses/>.
+
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.models import User
 from django import forms
 
 from djabberdjaw.bot.models import Bot, JabberAccount, InstantMessage
-
 
 _jid = lambda x : x.jid
 _owner = lambda x : x.owner.all()

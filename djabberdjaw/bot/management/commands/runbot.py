@@ -1,23 +1,39 @@
+# Copyright (C) 2008 Mark A. Matienzo
+# 
+# This file is part of djabberdjaw.
+# 
+# djabberdjaw is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# djabberdjaw is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with djabberdjaw.  If not, see <http://www.gnu.org/licenses/>.
+
 # TODO: provide threading for multiple bots
 
 import re
 from datetime import datetime
+
 from PyZ3950 import zoom
 import pymarc
 from jabberbot import JabberBot
 
 from django.contrib.auth.models import User
 from django.core.management.base import BaseCommand
-# from wordpress.models import WordpressUser, UserMeta
-from djabberdjaw.bot.models import Bot, JabberAccount, get_jid, InstantMessage
 
 from worldcat.request.xid import xISBNRequest
 
+from djabberdjaw.bot.models import Bot, JabberAccount, get_jid, InstantMessage
+
 ZSERVER = {'host': 'z3950.loc.gov', 'port': 7090, 'db': 'VOYAGER',
           'qsyntax': 'CCL', 'rsyntax': 'USMARC', 'element_set': 'F'}
-API_KEY = ''
 
-          
 def jl(l):
     return ', '.join(l)
 

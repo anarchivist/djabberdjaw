@@ -1,3 +1,20 @@
+# Copyright (C) 2008 Mark A. Matienzo
+# 
+# This file is part of djabberdjaw.
+# 
+# djabberdjaw is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# djabberdjaw is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with djabberdjaw.  If not, see <http://www.gnu.org/licenses/>.
+
 # Django settings for labsbot project.
 
 DEBUG = True
@@ -10,10 +27,10 @@ ADMINS = (
 MANAGERS = ADMINS
 
 # DATABASE_ENGINE = 'mysql'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-# DATABASE_NAME = 'wp_labs'             # Or path to database file if using sqlite3.
-# DATABASE_USER = 'mmatienzo'             # Not used with sqlite3.
-# DATABASE_PASSWORD = 'v4kthund'         # Not used with sqlite3.
-# DATABASE_HOST = 'mysql01.nypl.org'             # Set to empty string for localhost. Not used with sqlite3.
+# DATABASE_NAME = ''             # Or path to database file if using sqlite3.
+# DATABASE_USER = ''             # Not used with sqlite3.
+# DATABASE_PASSWORD = ''         # Not used with sqlite3.
+# DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.
 # DATABASE_PORT = ''             # Set to empty string for default. Not used with sqlite3.
 DATABASE_ENGINE = 'sqlite3'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
 DATABASE_NAME = 'testbot.db'             # Or path to database file if using sqlite3.
